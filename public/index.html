@@ -81,6 +81,7 @@
           const allData = jsonData['formattedData']
           const regionData = jsonData['regionData']
           const imgData = jsonData['imgData']
+          console.log(allData);
 
           // Create root element
           // https://www.amcharts.com/docs/v5/getting-started/#Root_element
@@ -438,7 +439,7 @@
       // const url = 'http://localhost:5000/api/data';
       const url = './api/data';
 
-      fetchData(url).then(data=>{setTimeout(showChart(data),2100)})
+      fetchData(url).then(data=>{setTimeout(showChart(data),1800)})
       
     </script>
 </body>
